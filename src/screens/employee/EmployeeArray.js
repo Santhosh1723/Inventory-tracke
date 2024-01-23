@@ -1,0 +1,235 @@
+let EmployeeArray = [
+  {
+   
+    v1: "1",
+    v2: "Santhosh",
+    v3: "santhosh17@gmail.com",
+    v4: "Admin",
+    v5: "Active",
+    v6: "17th Oct, 2003",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+    
+    v1: "2",
+    v2: "Sarathy",
+    v3: "sarathy03@gmail.com",
+    v4: "Casier",
+    v5: "Active",
+    v6: "3rd June 2004",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "3",
+    v2: "Pramoth",
+    v3: "Pramot06@gmail.com ",
+    v4: "Sales",
+    v5: "Active",
+    v6: "6th June 2004",
+    v7: "view",
+    Link: " /EmployeeView",
+  },
+  {
+    
+    v1: "4",
+    v2: "Ram",
+    v3: "ram.ram77@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "1st April, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "5",
+    v2: "Kavin",
+    v3: "kavin45@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "12th March, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "6",
+    v2: "Rakesh",
+    v3: "rockybai88@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "5th februrary, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "7",
+    v2: "Nithish",
+    v3: "nithish834@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "1st Janavary, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+    
+    v1: "8",
+    v2: "Santhosh",
+    v3: "santhosh17@gmail.com",
+    v4: "Admin",
+    v5: "Active",
+    v6: "17th Oct, 2003",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+    
+    v1: "9",
+    v2: "Sarathy",
+    v3: "sarathy03@gmail.com",
+    v4: "Casier",
+    v5: "Active",
+    v6: "3rd June 2004",
+    v7: "view",
+    Link: " /EmployeeView",
+  },
+  {
+   
+    v1: "10",
+    v2: "Pramoth",
+    v3: "Pramot06@gmail.com ",
+    v4: "Sales",
+    v5: "Active",
+    v6: "6th June 2004",
+    v7: "view",
+    Link: " /EmployeeView",
+  },
+  {
+
+    v1: "11",
+    v2: "Ram",
+    v3: "ram.ram77@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "1st April, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+  
+    v1: "12",
+    v2: "Kavin",
+    v3: "kavin45@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "12th March, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+    
+    v1: "13",
+    v2: "Rakesh",
+    v3: "rockybai88@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "5th februrary, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "14",
+    v2: "Nithish",
+    v3: "nithish834@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "1st Janavary, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+  
+    v1: "15",
+    v2: "Santhosh",
+    v3: "santhosh17@gmail.com",
+    v4: "Admin",
+    v5: "Active",
+    v6: "17th Oct, 2003",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "16",
+    v2: "Sarathy",
+    v3: "sarathy03@gmail.com",
+    v4: "Casier",
+    v5: "Active",
+    v6: "3rd June 2004",
+    v7: "view",
+    Link: " /EmployeeView",
+  },
+  {
+   
+    v1: "17",
+    v2: "Pramoth",
+    v3: "Pramot06@gmail.com ",
+    v4: "Sales",
+    v5: "Active",
+    v6: "6th June 2004",
+    v7: "view",
+    Link: " /EmployeeView",
+  },
+  {
+
+    v1: "18",
+    v2: "Ram",
+    v3: "ram.ram77@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "1st April, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "19",
+    v2: "Kavin",
+    v3: "kavin45@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "12th March, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+    
+    v1: "20",
+    v2: "Rakesh",
+    v3: "rockybai88@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "5th februrary, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+  {
+   
+    v1: "21",
+    v2: "Nithish",
+    v3: "nithish834@gmail.com",
+    v4: "Sales",
+    v5: "Active",
+    v6: "1st Janavary, 2021	",
+    v7: "view",
+    Link: "/EmployeeView",
+  },
+ 
+];
+export default EmployeeArray;
