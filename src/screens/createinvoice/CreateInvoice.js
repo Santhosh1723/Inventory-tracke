@@ -50,7 +50,7 @@ function CreateInvoice() {
               <Button
                 href="/InvoiceTable"
                 variant="primary"
-                style={{ marginTop: 70 }}
+                style={{ marginTop: 70,borderRadius:50 }}
               ><ArrowBackIcon></ArrowBackIcon>
                 Back To Invoice
               </Button>{" "}
@@ -58,24 +58,24 @@ function CreateInvoice() {
           </Row>
           <Row>
             <Col>
-              <Button variant="success" onClick={() => setModalShow(true)}><AddIcon></AddIcon>
+              <Button variant="success"  style={{borderRadius:50 }} onClick={() => setModalShow(true)}><AddIcon></AddIcon>
                 Add Item
               </Button>{" "}
               <MyVerticallyCenteredModal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
               />
-              <Button href="#Save" variant="info"><SaveIcon></SaveIcon>
+              <Button href="#Save" style={{borderRadius:50 }} variant="info"><SaveIcon></SaveIcon>
                 Save Invoice
               </Button>{" "}
-              <Button href="#remove" variant="danger"><RemoveCircleIcon></RemoveCircleIcon>
+              <Button href="#remove" style={{borderRadius:50 }} variant="danger"><RemoveCircleIcon></RemoveCircleIcon>
                 Remove Item
               </Button>{" "}
             </Col>
           </Row>
 
           <Card
-            className="shadow-lg  bg-white rounded"
+            className="commoncard"
             style={{ marginTop: 30 }}
           >
             <Container style={{ width: 1000 }}>
@@ -98,11 +98,11 @@ function CreateInvoice() {
                 <Row style={{ marginTop: 30 }}>
                   <Col>
                     <Form.Label>Customer Name</Form.Label>
-                    <Form.Control type="text" placeholder="First name" />
+                    <Form.Control type="text" placeholder="Enter name" />
                   </Col>
                   <Col>
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="text" placeholder="Phn Number" />
+                    <Form.Control type="text" placeholder="Phone Number" />
                   </Col>
                 </Row>
 
@@ -144,7 +144,7 @@ function CreateInvoice() {
                 </Row>
                 <Form.Group className="mb-3" controlId="formGridCompanyName">
                   <Form.Label>Company Name</Form.Label>
-                  <Form.Control placeholder="NAme of the company" />
+                  <Form.Control placeholder="Name of the company" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGridAddress1">
@@ -195,7 +195,7 @@ function CreateInvoice() {
                   <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button className="submitbutton type1" type="submit">
                   Submit
                 </Button>
                 <Row style={{ marginTop: 20 }}></Row>

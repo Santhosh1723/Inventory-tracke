@@ -1,3 +1,5 @@
+import RefreshIcon from "@mui/icons-material/Refresh";
+import SearchIcon from "@mui/icons-material/Search";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -9,9 +11,6 @@ import NavBar from "../../components/navbar/Navbar2";
 import Titlebars from "../../components/navbar/Titlebar";
 import IndianCurrency from "./IndianCurrency.jpg";
 import ProductArray from "./ProductArray";
-import SearchIcon from '@mui/icons-material/Search';
-import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
-import RefreshIcon from '@mui/icons-material/Refresh';
 
 function ProductTable() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -67,15 +66,26 @@ function ProductTable() {
                 Product Details
               </h1>
             </Col>
-            <Col md={2} xs={2}></Col>
+            <Col md={1} xs={1}></Col>
 
-            <Col md={2} xs={2}>
+            <Col md={3} xs={3}>
               <Button
+                className="createbutton"
                 href="/CreateProduct"
-                variant="warning"
-                style={{ marginTop: 120 }}
-              ><CreateNewFolderIcon></CreateNewFolderIcon>
+                style={{ marginTop: 120, marginLeft: 90 }}
+              >
                 Create Product
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="createicon"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fillRule="evenodd"
+                  ></path>
+                </svg>
               </Button>{" "}
             </Col>
           </Row>
@@ -126,13 +136,15 @@ function ProductTable() {
                   />
                 </Col>
                 <Col>
-                  <Button variant="success" onClick={filterProducts}><SearchIcon></SearchIcon>
+                  <Button variant="success" onClick={filterProducts} className="Commonbuttongreen">
+                    <SearchIcon></SearchIcon>
                     Search
                   </Button>{" "}
                 </Col>
-                <Col >
+                <Col>
                   {(searchQuery || category || price) && (
-                    <Button variant="danger" onClick={resetSearch}><RefreshIcon></RefreshIcon>
+                    <Button variant="danger" onClick={resetSearch} style={{borderRadius:50}}>
+                      <RefreshIcon></RefreshIcon>
                       Reset
                     </Button>
                   )}
@@ -145,12 +157,12 @@ function ProductTable() {
             <Table striped hover>
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Stock Amount</th>
-                  <th>Action</th>
+                  <th   style={{ backgroundColor: "#618685",color:"#fff" }}>ID</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Name</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Category</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Price</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Stock Amount</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Action</th>
                 </tr>
               </thead>
               <tbody>

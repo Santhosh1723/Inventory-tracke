@@ -28,7 +28,7 @@ function CreateCategory()
       <div>
         <Container style={{width:1100}}>
         <Row >
-          <Card border="warning" style={{marginTop:70}}>
+          <Card border="warning" style={{marginTop:90}}  className="commoncard">
             <Card.Header>
               <Card.Title></Card.Title>
             </Card.Header>
@@ -62,8 +62,8 @@ function CreateCategory()
            
             <Row>
             <Form.Group as={Col} controlId="formGridJoinedAt">
-            <Button href="/ProductCategory" variant="success" style={{paddingRight:30}}><ArrowBackIcon/> Back</Button>{" "}
-            <Button href="#submit" variant="primary">Submit</Button>{" "}
+            <Button href="/ProductCategory" variant="danger" style={{paddingRight:30,borderRadius:50 }}><ArrowBackIcon/> Back</Button>{" "}
+            <Button href="#submit" variant="primary" style={{borderRadius:50}}>Submit</Button>{" "}
             </Form.Group>
             </Row>
             </Col>

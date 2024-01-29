@@ -11,6 +11,7 @@ import Istock from "./Istock.jpg";
 import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
 import PreviewIcon from '@mui/icons-material/Preview';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import "./Invoice.css";
 
 //import "./TableCategory.css";
 function InvoiceTable() {
@@ -28,7 +29,7 @@ function InvoiceTable() {
       >
         <Container>
           <Row>
-            <Col md={5} xs={5}></Col>
+            <Col md={4} xs={4}></Col>
             <Col md={5} xs={5}>
               <h1
                 style={{
@@ -42,23 +43,43 @@ function InvoiceTable() {
                 Invoice Details
               </h1>
             </Col>
-            <Col md={2} xs={2}>
-              <Button
+            <Col md={3} xs={3}>
+            <Button
+                className="createbutton"
                 href="/CreateInvoice"
-                variant="warning"
-                style={{ marginTop: 120 }}
-              ><CreateNewFolderIcon></CreateNewFolderIcon>
+                style={{ marginTop: 120, marginLeft: 90 }}
+              >
                 Create Invoice
-              </Button>{" "}
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="createicon"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fillRule="evenodd"
+                  ></path>
+                </svg>
+              </Button>
+             {" "}
             </Col>
           </Row>
           <Row style={{ marginTop: 30 }}>
             <Table striped hover responsive>
               <thead>
                 <tr>
-                  {InvoiceArray.map((d) => (
-                    <th>{d.Head}</th>
-                  ))}
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}> ID</th>
+                  <th style={{ backgroundColor: "#618685",color:"#fff" }}>Customer </th>
+                  <th style={{ backgroundColor: "#618685",color:"#fff" }}>Invoice ID </th>
+                  <th style={{ backgroundColor: "#618685",color:"#fff" }}>Paid </th>
+                  <th style={{ backgroundColor: "#618685",color:"#fff" }}>Total </th>
+                  <th style={{ backgroundColor: "#618685",color:"#fff" }}>Date</th>
+                  <th style={{ backgroundColor: "#618685",color:"#fff" }}>Action</th>
+                  
+                
+                  
+               
                 </tr>
               </thead>
               <tbody>

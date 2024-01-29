@@ -30,15 +30,15 @@ function EmployeeView() {
           <Col xs="2" >
             <Button
               href="/EmployeeTable"
-              variant="success"
-              style={{ paddingRight: 30, marginTop: 30 }}
+              variant="danger"
+              style={{ paddingRight: 30, marginTop: 30,borderRadius:50 }}
             ><ArrowBackIcon/>
               Back
             </Button>{" "}
           </Col>
         </Row>
-        <Row style={{ marginTop: 30 }}>
-          <Card border="danger" style={{}}  >
+        <Row>
+          <Card border="danger" className="commoncard"  >
             <Card.Header>
               <Card.Title style={{textAlign:'center'}}>Employee Details</Card.Title>
             </Card.Header>
@@ -53,22 +53,22 @@ function EmployeeView() {
                 <Row style={{ marginBottom: 20 }}>
                   <Col>
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control type="text" placeholder="Santhosh" readOnly disabled/>
+                    <Form.Control type="text" placeholder="Santhosh" readOnly disabled style={{backgroundColor:"#93a1a1"}}/>
                   </Col>
                   <Col>
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control type="text" placeholder="Kumar" readOnly disabled />
+                    <Form.Control type="text" placeholder="Kumar" readOnly disabled style={{backgroundColor:"#93a1a1"}} />
                   </Col>
                 </Row>
                 <Row style={{ marginBottom: 20 }}>
                   <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Santhosh17@gmail.com" readOnly disabled />
+                    <Form.Control type="email" placeholder="Santhosh17@gmail.com" readOnly disabled style={{backgroundColor:"#93a1a1"}}/>
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridStatus">
                     <Form.Label>Role</Form.Label>
-                    <select className="form-select" readOnly disabled>
+                    <select className="form-select" readOnly disabled style={{backgroundColor:"#93a1a1"}}>
                       <option value="Admin">Admin</option>
 
                       <option value="Casier">Casier</option>
@@ -80,7 +80,7 @@ function EmployeeView() {
                 <Row style={{ marginBottom: 20 }}>
                   <Form.Group as={Col} controlId="formGridPhone">
                     <Form.Label>Phone No</Form.Label>
-                    <Form.Control type="Number" placeholder="9988776655" readOnly disabled/>
+                    <Form.Control type="Number" placeholder="9988776655" readOnly disabled style={{backgroundColor:"#93a1a1"}}/>
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridJoinedAt">
@@ -89,6 +89,7 @@ function EmployeeView() {
                       type="text"
                       placeholder="01-01-2000"
                       readOnly disabled
+                      style={{backgroundColor:"#93a1a1"}}
                     />
                   </Form.Group>
                 </Row>

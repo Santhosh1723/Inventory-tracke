@@ -103,13 +103,13 @@ function NewInvoice(props) {
                   />
                 </Col>
                 <Col>
-                  <Button variant="success" onClick={filterProducts}><SearchIcon></SearchIcon>
+                  <Button className="Commonbuttongreen" onClick={filterProducts}><SearchIcon></SearchIcon>
                     Search
                   </Button>{" "}
                 </Col>
                 <Col >
                   {(searchQuery || category || price) && (
-                    <Button variant="danger" onClick={resetSearch}><RefreshIcon></RefreshIcon>
+                    <Button variant="danger" style={{borderRadius:50}} onClick={resetSearch}><RefreshIcon></RefreshIcon>
                       Reset
                     </Button>
                   )}
@@ -138,7 +138,7 @@ function NewInvoice(props) {
                     <td>{d.v4}</td>
                     <td>{d.v5}</td>
                     <td>
-                      <Button href="#" ><AddCircleOutlineIcon></AddCircleOutlineIcon>
+                      <Button variant="info" href="#" ><AddCircleOutlineIcon></AddCircleOutlineIcon>
                         {d.v6}
                       </Button>
                     </td>
@@ -150,7 +150,7 @@ function NewInvoice(props) {
         </Container>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button onClick={props.onHide} variant="danger" style={{borderRadius:50}}>Close</Button>
       </Modal.Footer>
     </Modal>
   );

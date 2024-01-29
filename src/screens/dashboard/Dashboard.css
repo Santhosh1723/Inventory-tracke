@@ -38,3 +38,34 @@
   );
   transition: all 0.475s;
 }
+
+/* ________ Hover Card ______________ */
+.hovercard-client {
+  background: #2cb5a0;
+  width: 13rem;
+  height:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 1px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+ 
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.hovercard-client:hover {
+  transform: translateY(-10px);
+}
+
+
+
+
+/* _____________ */
+
+
+
+

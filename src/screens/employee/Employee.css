@@ -1,3 +1,137 @@
 * {
   background-image: "url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=600')";
 }
+thead {
+  background-color: #f2f2f2; /* Set the background color */
+}
+th {
+  padding: 10px; /* Set padding for the header cells */
+  text-align: left; /* Align text to the left in header cells */
+  border-bottom: 2px solid #ddd; /* Add a bottom border for separation */
+}
+
+/* Create Button  */
+.createbutton {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: #a370f0;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.createicon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.createbutton:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.createbutton:hover .createicon {
+  transform: translate(4px);
+}
+
+.createbutton:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.createbutton::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+/* ________________________________ */
+
+/* Coommon Button */
+.Commonbuttongreen {
+  display: inline-block;
+  padding: 5px 12px;
+  margin-top: -3px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #3aa46c, #0e532c);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px  #024b18;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.Commonbuttongreen:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #24a359;
+}
+
+.Commonbuttongreen:active {
+  transform: translateY(0px);
+  box-shadow: none;
+  background-image: linear-gradient(to bottom right, #20750d, #00c6ff);
+}
+
+.Commonbuttongreen:before,
+.Commonbuttongreen:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.Commonbuttongreen:before {
+  top: -3px;
+  left: -3px;
+  border-radius: 40px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+
+.Commonbuttongreen:after {
+  bottom: -3px;
+  right: -3px;
+  border-radius: 40px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+/* --------------------------------------- */

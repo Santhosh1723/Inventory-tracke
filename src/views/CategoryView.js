@@ -8,6 +8,7 @@ import Titlebars from "../components/navbar/Titlebar";
 import NavBar from "../components/navbar/Navbar2";
 import ViewImg from "./ViewImg.jpg";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { grey } from "@mui/material/colors";
 
 function CategoryView() {
   return (
@@ -30,15 +31,15 @@ function CategoryView() {
           <Col xs="2" >
             <Button
               href="/ProductCategory"
-              variant="success"
-              style={{ paddingRight: 30, marginTop: 30 }}
+              variant="danger"
+              style={{ paddingRight: 30, marginTop: 30,borderRadius:50 }}
             ><ArrowBackIcon/>
               Back
             </Button>{" "}
           </Col>
         </Row>
-        <Row style={{ marginTop: 30 }}>
-          <Card border="danger" style={{backgroundColor:""}}>
+        <Row>
+          <Card border="danger" className="commoncard">
             <Card.Header>
               <Card.Title style={{textAlign:'center',marginTop:10}}>Product Category Details</Card.Title>
             </Card.Header>
@@ -52,20 +53,20 @@ function CategoryView() {
             <Col md={8} xs={10}>
             <Row style={{marginBottom:20}}>
                 <Form.Label>Category Name</Form.Label>
-                <Form.Control type="text" placeholder="Computer and Accessories" readOnly disabled/>
+                <Form.Control type="text" placeholder="Computer and Accessories" readOnly disabled style={{backgroundColor:"#93a1a1"}}/>
                 <Row style={{marginBottom:20}}></Row>
                 <Form.Label>Product ID</Form.Label>
-                <Form.Control type="text" placeholder="c147" readOnly disabled/>
+                <Form.Control type="text" placeholder="c147" readOnly disabled muted style={{backgroundColor:"#93a1a1"}}/>
             </Row>
             <Row style={{marginBottom:30}}>
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>N0 Of Product</Form.Label>
-                <Form.Control type="text" placeholder="1500" readOnly disabled />
+                <Form.Control type="text"  placeholder="1500" readOnly disabled style={{backgroundColor:"#93a1a1"}} />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridStatus">
                 <Form.Label>Product Price</Form.Label>
-                <Form.Control type="Number" placeholder="6507" readOnly disabled/>
+                <Form.Control type="Number" placeholder="6507" readOnly disabled style={{backgroundColor:"#93a1a1"}}/>
               </Form.Group>
             </Row>
            

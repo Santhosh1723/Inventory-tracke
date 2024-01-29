@@ -8,6 +8,7 @@ import Titlebars from "../../components/navbar/Titlebar";
 import NavBar from "../../components/navbar/Navbar2";
 import CreateImg from "./CreateImg.jpg";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import "./CreateEmployee.css";
 
 function CreateEmployee() {
   return (
@@ -25,7 +26,7 @@ function CreateEmployee() {
       <div>
         <Container style={{width:900}}>
         <Row >
-          <Card border="danger" style={{marginTop:70}}>
+          <Card border="danger" style={{marginTop:70,borderRadius:50}} className="commoncard">
             <Card.Header>
               <Card.Title></Card.Title>
             </Card.Header>
@@ -74,8 +75,8 @@ function CreateEmployee() {
                   <Form.Group as={Col} controlId="formGridJoinedAt">
                     <Form.Label>Joined At</Form.Label>
                     <Form.Control
-                      type="text"
-                      placeholder="Sales/Casier/Admin"
+                      type="date"
+                     
                     />
                   </Form.Group>
                 </Row>
@@ -83,12 +84,12 @@ function CreateEmployee() {
                   <Form.Group as={Col} controlId="formGridJoinedAt">
                     <Button
                       href="/EmployeeTable"
-                      variant="success"
-                      style={{ paddingRight: 30 }}
+                      variant="danger"
+                      style={{ paddingRight: 30, borderRadius:50 }}
                     ><ArrowBackIcon/>
                       Back
                     </Button>{" "}
-                    <Button href="#submit" variant="primary">
+                    <Button href="#submit" varient="primary" style={{borderRadius:50}}>
                       Submit
                     </Button>{" "}
                   </Form.Group>

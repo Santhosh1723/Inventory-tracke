@@ -1,0 +1,112 @@
+Form.Control{
+    
+    background-color:#93a1a1 ;
+}
+/* view card  */
+.commoncard {
+    --bg: #e8e8e8;
+    --contrast: #e2e0e0;
+    margin-top: 40px;
+    --grey: #93a1a1;
+    position: relative;
+    padding: 9px;
+    background-color: var(--bg);
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .commoncard-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-conic-gradient(
+        var(--bg) 0.0000001%,
+        var(--grey) 0.000104%
+      )
+      60% 60%/600% 600%;
+    filter: opacity(10%) contrast(105%);
+  }
+  
+  .commoncard-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 190px;
+    height:auto;
+    background-color: var(--contrast);
+    border-radius: 30px;
+    /* Content style */
+    font-size: 30px;
+    font-weight: 900;
+    color: #c7c4c4;
+    text-align: center;
+    font-family: monospace;
+  }
+  /* _______________________________ */
+
+  /*   Download button   */
+
+.Downloadbutton {
+    height: 3rem;
+    width: 130px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .Downloadbutton:hover {
+    box-shadow: 0.5px 0.5px 150px #252525;
+  }
+  
+  .dtype1::after {
+    content: "Downloaded!";
+    height: 3rem;
+    width: 135px;
+    background-color:green;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dtype1::before {
+    content: "Download";
+    height: 3rem;
+    width: 130px;
+    background-color:deepskyblue;
+    color: #000000;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dtype1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
+  .dtype1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+  /* ___________________________ */

@@ -1,6 +1,8 @@
+import EditIcon from "@mui/icons-material/Edit";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LanguageIcon from "@mui/icons-material/Language";
+import SaveIcon from "@mui/icons-material/Save";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -12,10 +14,9 @@ import Container from "react-bootstrap/esm/Container";
 import Table from "react-bootstrap/esm/Table";
 import NavBar from "../../components/navbar/Navbar2";
 import Titlebars from "../../components/navbar/Titlebar";
-import UserProfileImg from "./UserProfileImg.jpg";
 import ProfileImg from "./ProfileImg.jpg";
-import EditIcon from '@mui/icons-material/Edit';
-import SaveIcon from '@mui/icons-material/Save';
+import "./Shop.css";
+import UserProfileImg from "./UserProfileImg.jpg";
 
 function UserProfile() {
   return (
@@ -35,7 +36,7 @@ function UserProfile() {
           <Row>
             <Col xs={4} md={4}>
               <Card
-                className="shadow-lg  bg-white rounded"
+                className="hovercard-client"
                 style={{
                   width: 300,
                   height: 450,
@@ -63,7 +64,7 @@ function UserProfile() {
                 </div>
                 <Card.Body style={{ marginTop: 10 }}>
                   <Card.Title style={{ textAlign: "center" }}>
-                    Santhosh
+                    Santhosh Kumar
                   </Card.Title>
                   <Card.Text style={{ textAlign: "center" }}>
                     <small className="text-muted">Sales Excutive</small>
@@ -73,9 +74,13 @@ function UserProfile() {
                     <small className="text-muted">504 hr of Working</small>
                   </Card.Text>
                   <div style={{ textAlign: "center" }}>
-                    <Button variant="info"><EditIcon></EditIcon>Edit</Button>
+                    <Button className="Commonbuttonblue">
+                      <EditIcon></EditIcon>Edit
+                    </Button>
                     {"      "}
-                    <Button variant="primary"><SaveIcon></SaveIcon>Save</Button>
+                    <Button className="Commonbuttonblue">
+                      <SaveIcon></SaveIcon>Save
+                    </Button>
                     {""}
                   </div>
                 </Card.Body>
@@ -84,7 +89,7 @@ function UserProfile() {
 
             <Col xs={8} md={8}>
               <Card
-                className="shadow-lg  bg-white rounded"
+                className="hovercard-colorless "
                 style={{
                   width: 800,
                   height: 450,
@@ -92,7 +97,7 @@ function UserProfile() {
                   marginTop: 50,
                 }}
               >
-                <Table style={{ marginBottom: 0 }}>
+                <Table  >
                   <thead>
                     <tr>
                       <th></th>
@@ -137,9 +142,10 @@ function UserProfile() {
                       <td>
                         <Button
                           href="/ShopOwnerDetails"
-                          variant="info"
+                          className="Commonbuttonblue"
                           style={{ alignItems: "center" }}
-                        ><EditIcon></EditIcon>
+                        >
+                          <EditIcon></EditIcon>
                           Edit
                         </Button>
                       </td>
@@ -153,13 +159,13 @@ function UserProfile() {
           <Row style={{ marginTop: 50 }}>
             <Col xs={4} md={4}>
               <Card
-                className="shadow-lg  bg-white rounded"
-                style={{ width: "18rem", border: "none" }}
+                 className="hovercard-colorless "
+                style={{ width: "18rem", border: "none"}}
               >
-                <Table style={{ marginBottom: 0 }}>
+                <Table style={{ marginBottom: 0}}>
                   <tbody>
                     <tr>
-                      <th>
+                      <th style={{ borderRadius: 10 }}>
                         <FacebookIcon
                           style={{ color: "#39569c" }}
                         ></FacebookIcon>{" "}
@@ -197,7 +203,7 @@ function UserProfile() {
 
             <Col xs={8} md={8}>
               <Card
-                className="shadow-lg  bg-white rounded"
+                 className="hovercard-colorless "
                 style={{ width: 800, border: "none" }}
               >
                 <Card.Header>Progress of the Week</Card.Header>

@@ -11,9 +11,15 @@ import Button from 'react-bootstrap/esm/Button';
 import ViewImg from "./ViewImg.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Titlebars from '../components/navbar/Titlebar';
+import NavBar from '../components/navbar/Navbar2';
+import "./View.css";
 
 function InvoiceView(){
   return (
+    <>
+    <Titlebars/>
+    <NavBar/>
     <div
     style={{
       backgroundImage:`url(${ViewImg})`,
@@ -25,9 +31,10 @@ function InvoiceView(){
   >
      <Row>
           <Col xs="3" ></Col>
-          <Col xs="6"> <Button
+          <Col xs="6"> 
+          <Button
               href="#"
-              variant="info"
+              className="Downloadbutton dtype1"
               style={{ paddingRight: 30, marginTop: 30 }}
             ><DownloadIcon />
              Download
@@ -35,8 +42,8 @@ function InvoiceView(){
           <Col xs="3" >
             <Button
               href="/InvoiceTable"
-              variant="success"
-              style={{ paddingRight: 30, marginTop: 30 }}
+              variant="danger"
+              style={{ paddingRight: 30, marginTop: 30 ,borderRadius:50}}
             ><ArrowBackIcon/>
               Back
             </Button>{" "}
@@ -184,6 +191,7 @@ function InvoiceView(){
       </Container>
       </Row>
     </div>
+    </>
   )
 }
 

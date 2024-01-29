@@ -19,7 +19,7 @@ function ProductView() {
         backgroundImage:`url(${ViewImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: 770,
+        height: 830,
         backgroundPosition: "",
       }}
     >
@@ -29,15 +29,15 @@ function ProductView() {
           <Col xs="2" >
             <Button
               href="/ProductTable"
-              variant="success"
-              style={{ paddingRight: 30, marginTop: 30 }}
+              variant="danger"
+              style={{ paddingRight: 30, marginTop: 30, borderRadius:50 }}
             ><ArrowBackIcon/>
               Back
             </Button>{" "}
           </Col>
         </Row>
-        <Row style={{ marginTop: 30 }}>
-          <Card border="warning">
+        <Row >
+          <Card border="warning" className="commoncard" >
             <Card.Header>
               <Card.Title>Product Details</Card.Title>
             </Card.Header>
@@ -54,6 +54,7 @@ function ProductView() {
                       placeholder="Camera"
                       disabled
                       readOnly
+                      style={{backgroundColor:"#93a1a1"}}
                     />
                   </Form.Group>
                   <Form.Group
@@ -66,6 +67,7 @@ function ProductView() {
                       rows={7}
                       disabled
                       readOnly
+                      style={{backgroundColor:"#93a1a1"}}
                       placeholder="PERFECT GIFT IDEA: Works on wet, dry, Long, short, thick, curly, and straight hair. Perfect gift for Valentines Day, Mother's Day, Thanksgiving, Christmas, Anniversary and Birthday to your girlfriend, wife, mom, sister and friends. NOTE: Paddle brush is designed to have one missing pin on the bottom of the cushion. This is to help with air circulation and is not a product defect."
                     />
                   </Form.Group>
@@ -78,6 +80,7 @@ function ProductView() {
                         disabled
                         readOnly
                         placeholder="Health & Beauty"
+                        style={{backgroundColor:"#93a1a1"}}
                       />
                     </Form.Group>
 
@@ -88,6 +91,7 @@ function ProductView() {
                         disabled
                         readOnly
                         placeholder="1205"
+                        style={{backgroundColor:"#93a1a1"}}
                       />
                     </Form.Group>
                   </Row>
@@ -101,6 +105,7 @@ function ProductView() {
                           disabled
                           readOnly
                           placeholder="1000"
+                          style={{backgroundColor:"#93a1a1"}}
                         />
                       </Form.Group>
 
@@ -110,7 +115,7 @@ function ProductView() {
                           type="number"
                           disabled
                           readOnly
-                          placeholder="125"
+                          style={{backgroundColor:"#93a1a1"}}
                         />
                       </Form.Group>
                     </Row>
@@ -124,6 +129,7 @@ function ProductView() {
                           disabled
                           readOnly
                           placeholder="Public"
+                          style={{backgroundColor:"#93a1a1"}}
                         />
                       </Form.Group>
                     </Row>

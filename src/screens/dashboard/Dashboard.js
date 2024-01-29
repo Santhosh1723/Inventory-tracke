@@ -31,10 +31,14 @@ function Dashboard() {
           <Row>
             <Col md={4} xs={12}>
               {" "}
-              <Card
-                className="shadow-lg  bg-white rounded"
+              <Card 
+              className="hovercard-client" 
+                //className="shadow-lg  bg-white rounded"
                 style={{ width: "18rem", margin: 10, marginTop: 80 }}
               >
+                
+
+
                 <Card.Body>
                   <Card.Title>Total Products</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -62,12 +66,14 @@ function Dashboard() {
                   </Button>
                   <Card.Link href="#"></Card.Link>
                 </Card.Body>
+              
               </Card>
             </Col>
             <Col md={4} xs={12}>
               {" "}
               <Card
-                className="shadow-lg  bg-white rounded"
+                className="hovercard-client" 
+                //className="shadow-lg  bg-white rounded"
                 style={{
                   width: "18rem",
                   margin: 10,
@@ -102,7 +108,8 @@ function Dashboard() {
             <Col md={4} xs={12}>
               {" "}
               <Card
-                className="shadow-lg  bg-white rounded"
+              className="hovercard-client" 
+                //className="shadow-lg  bg-white rounded"
                 style={{
                   width: "18rem",
                   margin: 10,
