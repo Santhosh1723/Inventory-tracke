@@ -6,6 +6,7 @@ let CreateInvoiceArray = [
     v3: "23",
     v4: "5650",
     v5: "500000",
+    v6:"Remove",
     Link: " #I1",
   },
   {
@@ -15,6 +16,7 @@ let CreateInvoiceArray = [
     v3: "100",
     v4: "1650",
     v5: "600050",
+    v6:"Remove",
     Link: " #I1",
   },
   {
@@ -24,6 +26,7 @@ let CreateInvoiceArray = [
     v3: "100",
     v4: "100",
     v5: "1000",
+    v6:"Remove",
     Link: " #I1",
   },
   {
@@ -33,6 +36,7 @@ let CreateInvoiceArray = [
     v3: "20",
     v4: "45",
     v5: "8000",
+    v6:"Remove",
     Link: " #I1",
   },
   {
@@ -42,6 +46,7 @@ let CreateInvoiceArray = [
     v3: "14",
     v4: "248",
     v5: "746370",
+    v6:"Remove",
     Link: " #I1",
   },
 ];

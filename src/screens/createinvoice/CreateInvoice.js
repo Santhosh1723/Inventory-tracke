@@ -14,7 +14,8 @@ import CreateInv from "./CreateInv.jpg";
 import SaveIcon from '@mui/icons-material/Save';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';;
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import DeleteIcon from "@mui/icons-material/Delete";
 
 function CreateInvoice() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -65,11 +66,11 @@ function CreateInvoice() {
                 show={modalShow}
                 onHide={() => setModalShow(false)}
               />
-              <Button href="#Save" style={{borderRadius:50 }} variant="info"><SaveIcon></SaveIcon>
+              <Button href="#Save" style={{borderRadius:50 }} variant="info"><SaveIcon/>
                 Save Invoice
               </Button>{" "}
-              <Button href="#remove" style={{borderRadius:50 }} variant="danger"><RemoveCircleIcon></RemoveCircleIcon>
-                Remove Item
+              <Button href="#remove" style={{borderRadius:50 }} variant="danger"><DeleteIcon/>
+                Delete Invoice
               </Button>{" "}
             </Col>
           </Row>
@@ -148,12 +149,12 @@ function CreateInvoice() {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGridAddress1">
-                  <Form.Label>Address</Form.Label>
+                  <Form.Label>Customer Address</Form.Label>
                   <Form.Control placeholder="1234 Main St" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGridAddress2">
-                  <Form.Label>Address 2</Form.Label>
+                  <Form.Label>Company Address</Form.Label>
                   <Form.Control placeholder="Apartment, studio, or floor" />
                 </Form.Group>
 
@@ -222,9 +223,14 @@ function CreateInvoice() {
           <Table striped hover>
             <thead>
               <tr>
-                {CreateInvoiceArray.map((d) => (
-                  <th>{d.Head}</th>
-                ))}
+                  <th>Id</th>
+                  <th>Product Name </th>
+                  <th> Quantity</th>
+                  <th>Price</th>
+                  <th>Sub.Total </th>
+                  <th>Remove</th>
+                 
+              
               </tr>
             </thead>
             <tbody>
@@ -235,12 +241,17 @@ function CreateInvoice() {
                   <td>{d.v3}</td>
                   <td>{d.v4}</td>
                   <td>{d.v5}</td>
+                  <td>
+                    <Button href={d.Link} variant="danger"><RemoveCircleIcon/>{d.v6}</Button>
+                  </td>
+                  
                 </tr>
               ))}
               <tr>
                 <td colSpan={2}></td>
                 <th colSpan={2}> TOTAL</th>
                 <td>150000</td>
+                <td></td>
               </tr>
             </tbody>
           </Table>

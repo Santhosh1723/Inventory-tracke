@@ -18,6 +18,7 @@ import CategoryView from "./views/CategoryView";
 import EmployeeView from "./views/Employeevew";
 import InvoiceView from "./views/InvoiceView";
 import ProductView from "./views/productview";
+import ProductCategoryList from "./views/ProductCategoryList";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
           <Route path="/CreateInvoice" element={<CreateInvoice />} />
           <Route path="/NewInvoice" element={<NewInvoice />} />
           <Route path="/Dashboard" element={<Dashboard />} />
-
+          <Route path="/ProductCategoryList" element={<ProductCategoryList/>} />
           <Route path="SignUp" element={<SignUp />} />
           <Route path="ProductView" element={<ProductView />} />
           <Route path="EmployeeView" element={<EmployeeView />} />

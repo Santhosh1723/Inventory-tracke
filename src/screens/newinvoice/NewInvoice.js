@@ -124,8 +124,9 @@ function NewInvoice(props) {
                 <tr>
                   <th>ID</th>
                   <th>Product Name</th>
-                  <th>Stock</th>
+                  <th>Category</th>
                   <th>Price</th>
+                  <th>Stock</th>
                   <th>Add Product</th>
                 </tr>
               </thead>
