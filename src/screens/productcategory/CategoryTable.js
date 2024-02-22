@@ -9,7 +9,11 @@ import NavBar from "../../components/navbar/Navbar2";
 import Titlebars from "../../components/navbar/Titlebar";
 import Heading from "./CategoryArray";
 import Istock from "./Istock.jpg";
+<<<<<<< HEAD
 import ListIcon from "@mui/icons-material/List";
+=======
+import ListIcon from '@mui/icons-material/List';
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
 import "./TableCategory.css";
 
 function ProductCategory() {
@@ -67,6 +71,7 @@ function ProductCategory() {
             <Table striped hover>
               <thead style={{ position: "sticky", top: "0" }}>
                 <tr>
+<<<<<<< HEAD
                   <th style={{ backgroundColor: "#618685", color: "#fff" }}>
                     ID
                   </th>
@@ -82,6 +87,13 @@ function ProductCategory() {
                   <th style={{ backgroundColor: "#618685", color: "#fff" }}>
                     Action
                   </th>
+=======
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>ID</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff"}}>Name</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Total Product </th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>List of Product</th>
+                  <th  style={{ backgroundColor: "#618685",color:"#fff" }}>Action</th>
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
                 </tr>
               </thead>
               <tbody>
@@ -91,8 +103,13 @@ function ProductCategory() {
                     <td>{d.v2}</td>
                     <td>{d.v3}</td>
                     <td>
+<<<<<<< HEAD
                       <Button href="/ProductCategoryList" variant="info">
                         <ListIcon /> {d.v4}
+=======
+                      <Button href="/ProductCategoryList" variant="info"> 
+                         <ListIcon/> {d.v4}
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
                       </Button>
                     </td>
                     <td>
@@ -106,7 +123,11 @@ function ProductCategory() {
               </tbody>
             </Table>
           </Row>
+<<<<<<< HEAD
           <Row style={{ marginTop: 40 }}></Row>
+=======
+          <Row style={{marginTop:40}}></Row>
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
         </Container>
       </div>
     </>

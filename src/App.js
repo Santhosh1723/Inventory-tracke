@@ -22,7 +22,11 @@ import EmployeeView from "./views/Employeevew";
 import InvoiceView from "./views/InvoiceView";
 import ProductCategoryList from "./views/ProductCategoryList";
 import ProductView from "./views/productview";
+<<<<<<< HEAD
 import BillingProducts from "./screens/newinvoice/BillingProducts";
+=======
+import ProductCategoryList from "./views/ProductCategoryList";
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
 
 function App() {
   const [selectedItems, setSelectedItems] = useState([]);
@@ -53,12 +57,21 @@ function App() {
           <Route path="/CreateProduct" element={<CreateProduct />} />
           <Route path="/CreateCategory" element={<CreateCategory />} />
           <Route path="/Dashboard" element={<Dashboard />} />
+<<<<<<< HEAD
           <Route path="/ProductCategoryList"  element={<ProductCategoryList />}/>
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/ProductView" element={<ProductView />} />
           <Route path="/EmployeeView" element={<EmployeeView />} />
           <Route path="/CategoryView" element={<CategoryView />} />
           <Route path="/InvoiceView" element={<InvoiceView />} />
+=======
+          <Route path="/ProductCategoryList" element={<ProductCategoryList/>} />
+          <Route path="SignUp" element={<SignUp />} />
+          <Route path="ProductView" element={<ProductView />} />
+          <Route path="EmployeeView" element={<EmployeeView />} />
+          <Route path="CategoryView" element={<CategoryView />} />
+          <Route path="InvoiceView" element={<InvoiceView />} />
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
           <Route path="/ShopOwnerDetails" element={<ShopOwnerDetails />} />
 
           <Route

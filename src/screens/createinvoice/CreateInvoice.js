@@ -16,11 +16,19 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SaveIcon from "@mui/icons-material/Save";
 import CreateInv from "./CreateInv.jpg";
+<<<<<<< HEAD
 //import NewInvoicetArray from "./NewInvoiceArray";
 import SearchIcon from '@mui/icons-material/Search';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RefreshIcon from '@mui/icons-material/Refresh';
 //import Card from 'react-bootstrap/Card';
+=======
+import SaveIcon from '@mui/icons-material/Save';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import DeleteIcon from "@mui/icons-material/Delete";
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
 
 function CreateInvoice() {
 
@@ -75,6 +83,7 @@ function CreateInvoice() {
                 <AddIcon />
                 Add Item
               </Button>{" "}
+<<<<<<< HEAD
               <Button href="#Save" style={{ borderRadius: 50 }} variant="info">
                 <SaveIcon />
                 Save Invoice
@@ -85,6 +94,16 @@ function CreateInvoice() {
                 variant="danger"
               >
                 <DeleteIcon />
+=======
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+              <Button href="#Save" style={{borderRadius:50 }} variant="info"><SaveIcon/>
+                Save Invoice
+              </Button>{" "}
+              <Button href="#remove" style={{borderRadius:50 }} variant="danger"><DeleteIcon/>
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
                 Delete Invoice
               </Button>{" "}
             </Col>
@@ -217,7 +236,45 @@ function CreateInvoice() {
           </Card>
          
 
+<<<<<<< HEAD
           
+=======
+          <Table striped hover>
+            <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Product Name </th>
+                  <th> Quantity</th>
+                  <th>Price</th>
+                  <th>Sub.Total </th>
+                  <th>Remove</th>
+                 
+              
+              </tr>
+            </thead>
+            <tbody>
+              {CreateInvoiceArray.map((d) => (
+                <tr>
+                  <td>{d.v1}</td>
+                  <td>{d.v2}</td>
+                  <td>{d.v3}</td>
+                  <td>{d.v4}</td>
+                  <td>{d.v5}</td>
+                  <td>
+                    <Button href={d.Link} variant="danger"><RemoveCircleIcon/>{d.v6}</Button>
+                  </td>
+                  
+                </tr>
+              ))}
+              <tr>
+                <td colSpan={2}></td>
+                <th colSpan={2}> TOTAL</th>
+                <td>150000</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </Table>
+>>>>>>> fa892072100c1c8c9d633f6027c5a8ceef6789b5
           <Row style={{ marginTop: 40 }}></Row>
         </Container>
       </div>
