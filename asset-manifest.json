@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Inventory-Tracker-UI/static/css/main.2eb48c81.css",
+    "main.js": "/Inventory-Tracker-UI/static/js/main.2b390ff4.js",
+    "static/media/IndianCurrency.jpg": "/Inventory-Tracker-UI/static/media/IndianCurrency.743bc29d45667e99b9c5.jpg",
+    "static/media/CreateImg.jpg": "/Inventory-Tracker-UI/static/media/CreateImg.06e56092fc8491b20f12.jpg",
+    "static/media/CreateInv.jpg": "/Inventory-Tracker-UI/static/media/CreateInv.15e411582e9feecdd178.jpg",
+    "static/media/ViewImg.jpg": "/Inventory-Tracker-UI/static/media/ViewImg.e4f9dc4e04292c28638b.jpg",
+    "static/media/LoginImg.jpg": "/Inventory-Tracker-UI/static/media/LoginImg.3de86e8712f52587c1a3.jpg",
+    "static/media/UserProfileImg.jpg": "/Inventory-Tracker-UI/static/media/UserProfileImg.a5f204156cd9fe2dd3b1.jpg",
+    "static/media/Istock.jpg": "/Inventory-Tracker-UI/static/media/Istock.2185e7f14a7cfa577fa3.jpg",
+    "static/media/HeadImage.png": "/Inventory-Tracker-UI/static/media/HeadImage.b689170e7343e990e653.png",
+    "static/media/LoginBg.jpg": "/Inventory-Tracker-UI/static/media/LoginBg.d5775243a28d75840afa.jpg",
+    "static/media/Logo.png": "/Inventory-Tracker-UI/static/media/Logo.639e2e9988dfc9a6d1b5.png",
+    "static/media/Image2.jpg": "/Inventory-Tracker-UI/static/media/Image2.ba49015795d58eee72d5.jpg",
+    "static/media/SIGNUP.jpg": "/Inventory-Tracker-UI/static/media/SIGNUP.1f8f3ed0c42257cda3c7.jpg",
+    "static/media/Image1.jpg": "/Inventory-Tracker-UI/static/media/Image1.a0cdbfdbd401649e41ae.jpg",
+    "static/media/ProfileImg.jpg": "/Inventory-Tracker-UI/static/media/ProfileImg.362d9914fd7ed56ba462.jpg",
+    "index.html": "/Inventory-Tracker-UI/index.html",
+    "main.2eb48c81.css.map": "/Inventory-Tracker-UI/static/css/main.2eb48c81.css.map",
+    "main.2b390ff4.js.map": "/Inventory-Tracker-UI/static/js/main.2b390ff4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2eb48c81.css",
+    "static/js/main.2b390ff4.js"
+  ]
+}
